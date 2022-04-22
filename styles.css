@@ -1,0 +1,120 @@
+/* * {font-family: 'Inter', sans-serif;
+font-family: 'Padauk', sans-serif;
+font-family: 'Source Sans Pro', sans-serif; } */
+.photo img {
+    height: 77vh;
+}
+
+
+
+html, body {
+    height: 100%;
+    margin: 30px;
+    font-family: sans-serif;
+    background-color: steelblue;
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 2fr 1.5fr auto;
+    height: 100%;
+}
+
+.left {
+    grid-column: 1;
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 1fr;
+}
+
+
+.photo {
+    grid-column: 2;
+    align-self: end;
+}
+
+.title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.5rem;
+}
+
+.introduction {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.name {
+    font-family: 'Padauk', sans-serif;
+    font-weight: bold;
+    font-size: 8rem;
+}
+
+p {
+    margin: 0;
+}
+
+.job-title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.5rem;
+}
+
+.quote {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.email-section, .phone-section {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    background: lightblue;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 15px;
+    color: black;
+}
+
+
+.information {
+    display: flex;
+    gap: 10rem;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.links p {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.links {
+    align-self: end;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.links img {
+    height: 30px;
+}
