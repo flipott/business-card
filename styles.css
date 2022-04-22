@@ -1,17 +1,16 @@
-/* * {font-family: 'Inter', sans-serif;
-font-family: 'Padauk', sans-serif;
-font-family: 'Source Sans Pro', sans-serif; } */
-.photo img {
-    height: 77vh;
+html {
+    min-height: 100%;
 }
 
-
-
-html, body {
+body {
     height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     margin: 30px;
     font-family: sans-serif;
-    background-color: steelblue;
+    background: rgb(7,151,180);
+    background: linear-gradient(262deg, rgba(7,151,180,1) 50%, rgba(16,60,74,1) 57%);    
     margin: 0;
     padding: 0;
     color: white;
@@ -19,7 +18,7 @@ html, body {
 }
 
 .container {
-    margin: 50px;
+    margin: 0 50px;
     display: grid;
     grid-template-columns: 2fr 1.5fr auto;
     height: 100%;
@@ -31,7 +30,6 @@ html, body {
     grid-template-rows: 0.5fr 1fr 1fr;
 }
 
-
 .photo {
     grid-column: 2;
     align-self: end;
@@ -40,6 +38,7 @@ html, body {
 .title {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.5rem;
+    margin-top: 50px;
 }
 
 .introduction {
@@ -79,13 +78,14 @@ p {
 .main-section {
     display: flex;
     flex-direction: column;
-    background: lightblue;
+    background: rgba(150, 204, 223, 0.8);
     width: fit-content;
+    min-width: 550px;
     padding: 20px;
     border-radius: 15px;
     color: black;
+    box-shadow: 0 5px 10px black, 0 15px 40px black;
 }
-
 
 .information {
     display: flex;
@@ -97,6 +97,11 @@ p {
     flex-direction: column;
     gap: 2rem;
     margin-top: 5rem;
+}
+
+
+.photo img {
+    height: 77vh;
 }
 
 .links p {
@@ -117,4 +122,37 @@ p {
 
 .links img {
     height: 30px;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .photo {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .links p {
+        writing-mode: horizontal-tb;
+        text-orientation: mixed;
+        font-family: 'Inter', sans-serif;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .links {
+        align-self: end;
+        margin-bottom: 200px;
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+        margin-top: 25px;
+    }
+
+    .contact-section {
+        align-items: center;
+    }
 }
